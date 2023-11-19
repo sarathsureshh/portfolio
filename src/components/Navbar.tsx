@@ -1,9 +1,5 @@
 import { Dispatch, FC, SetStateAction, useEffect, useState } from "react";
-import {
-  MoonIcon,
-  SunIcon,
-  SunIconMobile,
-} from "./assets/Icons";
+import { MoonIcon, SunIcon, SunIconMobile } from "./assets/Icons";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
@@ -143,12 +139,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
                 isOpenMenu
                 setIsOpenMenu={setIsOpenMenu}
               />
-              <NavigationLink
-                text="Projects"
-                href="/projects"
-                isOpenMenu
-                setIsOpenMenu={setIsOpenMenu}
-              />
+
               <NavigationLink
                 text="Contact"
                 href="/contact"
