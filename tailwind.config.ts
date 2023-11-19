@@ -1,20 +1,73 @@
-import type { Config } from 'tailwindcss'
+import { fontFamily } from "tailwindcss/defaultTheme";
 
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        mont: ["var(--font-mont)", ...fontFamily.sans],
+      },
+      colors: {
+        light: "#f5f5f5",
+        dark: "#1b1b1b",
+        primary: "#9f1239",
+        primaryDark: "",
+      },
+      animation: {
+        "spin-slow": "spin 7s linear infinite",
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        circularLight:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 100px)",
+
+        circularDark:
+          "repeating-radial-gradient(rgba(255,255,255,0.4) 2px, rgba(0,0,0,0) 8px, rgba(0,0,0,0) 100px)",
+
+        circularLightLg:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 80px)",
+
+        circularDarkLg:
+          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,rgba(0,0,0,0) 8px,rgba(0,0,0,0) 80px)",
+
+        circularLightMd:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 60px)",
+
+        circularDarkMd:
+          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,rgba(0,0,0,0) 6px,rgba(0,0,0,0) 60px)",
+
+        circularLightSm:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 40px)",
+
+        circularDarkSm:
+          "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,rgba(0,0,0,0) 4px,rgba(0,0,0,0) 40px)",
       },
     },
+    screens: {
+      "2xl": { max: "1535px" },
+      // => @media (max-width: 1535px) { ... }
+
+      xl: { max: "1279px" },
+      // => @media (max-width: 1279px) { ... }
+
+      lg: { max: "1023px" },
+      // => @media (max-width: 1023px) { ... }
+
+      md: { max: "767px" },
+      // => @media (max-width: 767px) { ... }
+
+      sm: { max: "639px" },
+      // => @media (max-width: 639px) { ... }
+
+      xs: { max: "479px" },
+      // => @media (max-width: 479px) { ... }
+    },
   },
-  plugins: [],
-}
-export default config
+  plugins: [require("tailwind-scrollbar-hide")],
+};
