@@ -1,5 +1,8 @@
 import SEO from "@/components/SEO";
 import Headline from "@/components/ui/Headline";
+import HireMe from "@/components/assets/HireMe";
+import Button from "@/components/ui/Button";
+import { LinkArrow } from "@/components/assets/Icons";
 import { slowContainer, slowItem } from "@/util/staggeredAnimation";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -40,6 +43,11 @@ export default function Home() {
             className="flex items-center gap-4 mt-4 cursor-pointer"
             variants={slowItem}
           >
+            {/* <Button
+              text="Resume"
+              icon={<LinkArrow className="w-6" />}
+              href={"/Resume.pdf"}
+            /> */}
 
             <Link
               href={"/contact"}
@@ -50,6 +58,7 @@ export default function Home() {
             </Link>
           </motion.div>
         </motion.div>
+        {/* <HireMe /> */}
       </main>
     </>
   );
