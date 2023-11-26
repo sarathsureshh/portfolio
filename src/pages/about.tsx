@@ -12,7 +12,7 @@ const about: FC<aboutProps> = ({}) => {
     <>
       <SEO
         pageTitle="Sarath | About"
-        pageDescription={"To know more about sarath, read this through!"}
+        pageDescription={"To know more about sarath, read this through!!!"}
       />
       <main className="flex flex-col items-center justify-center w-full">
         <HeadlineAnimated title="About ME" className="mt-32 lg:mt-14" />
