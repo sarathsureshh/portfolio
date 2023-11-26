@@ -1,5 +1,5 @@
 import SEO from "@/components/SEO";
-import coverPhoto from "../../public/sarath.jpeg";
+import coverPhoto from "../../public/Sarath.jpeg";
 import Image from "next/image";
 import { FC } from "react";
 import Headline, { HeadlineAnimated } from "@/components/ui/Headline";
