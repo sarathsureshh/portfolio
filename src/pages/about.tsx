@@ -1,5 +1,5 @@
 import SEO from "@/components/SEO";
-import coverPhoto from "../../public/Sarath.jpeg";
+import coverPhoto from "../../public/sarath.jpeg";
 import Image from "next/image";
 import { FC } from "react";
 import Headline, { HeadlineAnimated } from "@/components/ui/Headline";
@@ -12,9 +12,7 @@ const about: FC<aboutProps> = ({}) => {
     <>
       <SEO
         pageTitle="Sarath | About"
-        pageDescription={
-          "Discover how Shemilkumar, an experienced MERN stack developer with expertise in JavaScript, React, Node.js, and MongoDB, can help you build dynamic and responsive web applications that drive results. Explore his portfolio and achievements, and contact him to learn more."
-        }
+        pageDescription={"To know more about sarath, read this through!"}
       />
       <main className="flex flex-col items-center justify-center w-full">
         <HeadlineAnimated title="About ME" className="mt-32 lg:mt-14" />

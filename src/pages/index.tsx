@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <SEO
         pageTitle="Sarath | Home"
-        pageDescription={`This is sarath's portfolio website, take a look to know more.`}
+        pageDescription={`Welcome to sarath's portfolio website, take a look to know more.`}
       />
       <main className="flex items-center justify-center h-screen">
         <motion.div
