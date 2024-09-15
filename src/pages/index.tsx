@@ -43,11 +43,11 @@ export default function Home() {
             className="flex items-center gap-4 mt-4 cursor-pointer"
             variants={slowItem}
           >
-            {/* <Button
+            <Button
               text="Resume"
               icon={<LinkArrow className="w-6" />}
               href={"/Resume.pdf"}
-            /> */}
+            />
 
             <Link
               href={"/contact"}
@@ -58,7 +58,7 @@ export default function Home() {
             </Link>
           </motion.div>
         </motion.div>
-        {/* <HireMe /> */}
+        <HireMe />
       </main>
     </>
   );
