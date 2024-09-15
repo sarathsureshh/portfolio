@@ -46,7 +46,7 @@ export default function Home() {
             <Button
               text="Resume"
               icon={<LinkArrow className="w-6" />}
-              href={"/Resume.pdf"}
+              href={"/resume.pdf"}
             />
 
             <Link
