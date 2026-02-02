@@ -10,15 +10,28 @@
     --neon-pink: #ff00ff;
     --cyber-dark: #0a0a0f;
     --cyber-gray: #1a1a2e;
+    --cursor-default:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='24' viewBox='0 0 20 24'%3E%3Cpath fill='%2300ff88' d='M2 2 L2 22 L6 18 L10 24 L14 22 L10 16 L16 16 Z'/%3E%3Cpath fill='%230a0a0f' stroke='%2300ff88' stroke-width='1' d='M3 4 L3 19 L6 16 L9.5 21.5 L11.5 20.5 L8 15 L14 15 Z'/%3E%3C/svg%3E")
+        2 2,
+      auto;
+    --cursor-pointer:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%2300d4ff' d='M7 2v11h3v9l7-12h-4l4-8z'/%3E%3Cpath fill='%230a0a0f' stroke='%2300d4ff' stroke-width='1' d='M8 4v9h3v6l4.5-8h-3l3-7z'/%3E%3C/svg%3E")
+        8 2,
+      pointer;
+    --cursor-text:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='24' viewBox='0 0 16 24'%3E%3Crect x='7' y='0' width='2' height='24' fill='%2300ff88'/%3E%3Crect x='4' y='0' width='8' height='2' fill='%2300ff88'/%3E%3Crect x='4' y='22' width='8' height='2' fill='%2300ff88'/%3E%3C/svg%3E")
+        8 12,
+      text;
   }
 
   * {
-    cursor: default;
+    cursor: none !important;
   }
 
-  a,
-  button {
-    cursor: pointer;
+  @media (pointer: coarse) {
+    * {
+      cursor: auto !important;
+    }
   }
 
   html {

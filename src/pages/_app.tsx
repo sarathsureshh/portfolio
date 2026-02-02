@@ -5,6 +5,7 @@ import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Layout from "@/components/Layout";
 import ParticleField from "@/components/ParticleField";
+import CustomCursor from "@/components/CustomCursor";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 
@@ -30,10 +31,13 @@ export default function App({ Component, pageProps }: AppProps) {
       <main
         className={`${spaceGrotesk.variable} ${jetBrainsMono.variable} font-mont min-h-screen bg-cyber-dark text-gray-100 relative overflow-hidden`}
       >
-        <div className="fixed inset-0 bg-cyber-grid bg-cyber-grid opacity-30 pointer-events-none" />
+        <div className="fixed inset-0 bg-cyber-grid bg-cyber-grid opacity-30 md:opacity-10 pointer-events-none" />
         <div className="fixed inset-0 bg-gradient-to-b from-cyber-dark via-cyber-gray/20 to-cyber-dark pointer-events-none" />
+        <div className="fixed inset-0 bg-cyber-dark/50 md:bg-cyber-dark/80 pointer-events-none" />
 
-        <ParticleField />
+        <div className="md:hidden">
+          <ParticleField />
+        </div>
 
         <div className="scan-line" />
 
@@ -60,6 +64,8 @@ export default function App({ Component, pageProps }: AppProps) {
             <span>SYSTEM://ONLINE</span>
           </div>
         </div>
+
+        <CustomCursor />
       </main>
     </>
   );
