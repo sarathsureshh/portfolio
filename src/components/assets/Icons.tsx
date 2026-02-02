@@ -94,12 +94,7 @@ export const SunIcon: FC<IconProps> = ({ className, ...rest }) => {
       >
         <g strokeDasharray="2">
           <path d="M12 21v1M21 12h1M12 3v-1M3 12h-1">
-            <animate
-              fill="freeze"
-              attributeName="stroke-dashoffset"
-              dur="0.2s"
-              values="4;2"
-            />
+            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="4;2" />
           </path>
           <path d="M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5">
             <animate
@@ -189,50 +184,14 @@ export const SunIcon: FC<IconProps> = ({ className, ...rest }) => {
       <mask id="lineMdSunnyFilledLoopToMoonFilledLoopTransition1">
         <circle cx="12" cy="12" r="12" fill="#fff" />
         <circle cx="22" cy="2" r="3" fill="#fff">
-          <animate
-            fill="freeze"
-            attributeName="cx"
-            begin="0.1s"
-            dur="0.4s"
-            values="22;18"
-          />
-          <animate
-            fill="freeze"
-            attributeName="cy"
-            begin="0.1s"
-            dur="0.4s"
-            values="2;6"
-          />
-          <animate
-            fill="freeze"
-            attributeName="r"
-            begin="0.1s"
-            dur="0.4s"
-            values="3;12"
-          />
+          <animate fill="freeze" attributeName="cx" begin="0.1s" dur="0.4s" values="22;18" />
+          <animate fill="freeze" attributeName="cy" begin="0.1s" dur="0.4s" values="2;6" />
+          <animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="3;12" />
         </circle>
         <circle cx="22" cy="2" r="1">
-          <animate
-            fill="freeze"
-            attributeName="cx"
-            begin="0.1s"
-            dur="0.4s"
-            values="22;18"
-          />
-          <animate
-            fill="freeze"
-            attributeName="cy"
-            begin="0.1s"
-            dur="0.4s"
-            values="2;6"
-          />
-          <animate
-            fill="freeze"
-            attributeName="r"
-            begin="0.1s"
-            dur="0.4s"
-            values="1;10"
-          />
+          <animate fill="freeze" attributeName="cx" begin="0.1s" dur="0.4s" values="22;18" />
+          <animate fill="freeze" attributeName="cy" begin="0.1s" dur="0.4s" values="2;6" />
+          <animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="1;10" />
         </circle>
       </mask>
       <circle
@@ -243,13 +202,7 @@ export const SunIcon: FC<IconProps> = ({ className, ...rest }) => {
         mask="url(#lineMdSunnyFilledLoopToMoonFilledLoopTransition1)"
       >
         {/* <set attributeName="opacity" begin="0.5s" to="0" /> */}
-        <animate
-          fill="freeze"
-          attributeName="r"
-          begin="0.1s"
-          dur="0.4s"
-          values="6;10"
-        />
+        <animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="6;10" />
       </circle>
     </svg>
   );
@@ -450,9 +403,7 @@ export const MyCircularText: FC<IconProps> = ({ className, dark, ...rest }) => (
     {...rest}
     className={`w-full h-auto ${className}`}
   >
-    <metadata>
-      Created by potrace 1.16, written by Peter Selinger 2001-2019
-    </metadata>
+    <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
     <g
       transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)"
       // fill={dark ? "#FFFFFF" : "#000000"}
@@ -687,9 +638,7 @@ export const CircularText: FC<IconProps> = ({ className, ...rest }) => (
     {...rest}
     className={`w-full h-auto ${className}`}
   >
-    <metadata>
-      Created by potrace 1.16, written by Peter Selinger 2001-2019
-    </metadata>
+    <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
     <g
       transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)"
       fill="#000000"

@@ -6,10 +6,7 @@ interface HeadlineProps {
   className?: string;
 }
 
-export const HeadlineAnimated: FC<HeadlineProps> = ({
-  title,
-  className = "",
-}) => {
+export const HeadlineAnimated: FC<HeadlineProps> = ({ title, className = "" }) => {
   return (
     <motion.h1
       className={`text-5xl lg:text-4xl sm:text-3xl font-bold uppercase text-center

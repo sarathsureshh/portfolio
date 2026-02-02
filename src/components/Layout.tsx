@@ -8,7 +8,7 @@ interface LayoutProps {
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <div className="relative w-full">
-      {children} 
+      {children}
       <Analytics />
     </div>
   );

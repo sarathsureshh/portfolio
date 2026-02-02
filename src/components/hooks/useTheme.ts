@@ -5,8 +5,7 @@ function useTheme() {
   const [theme, setTheme] = useState<string>("");
 
   const darkThemeFromStorage =
-    typeof window !== "undefined" &&
-    window.localStorage.getItem("usehooks-ts-dark-mode");
+    typeof window !== "undefined" && window.localStorage.getItem("usehooks-ts-dark-mode");
 
   useEffect(() => {
     if (darkThemeFromStorage === "true") setTheme("dark");
