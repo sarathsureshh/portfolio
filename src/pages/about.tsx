@@ -14,24 +14,30 @@ interface TimelineItem {
 
 const timeline: TimelineItem[] = [
   {
+    year: "2025",
+    title: "Senior Software Engineer",
+    company: "EY GDS",
+    description: "Working on huge data sets and building efficient backend services",
+  },
+  {
     year: "2024",
-    title: "Software Engineer",
-    company: "Graas.ai",
+    title: "Senior Software Engineer",
+    company: "Justdial.com",
     description:
-      "Building scalable e-commerce analytics platforms with React, Node.js, and cloud technologies.",
+      "Leading a team to build scalable web applications using React and Node.js, enhancing user experience and performance.",
   },
   {
     year: "2023",
-    title: "Backend Developer",
+    title: "Software Engineer",
     company: "Graas.ai",
-    description: "Developed microservices architecture and REST APIs using Java and Python.",
+    description: "Developed microservices architecture and REST APIs using Java and Python",
   },
   {
     year: "2022",
-    title: "Junior Developer",
-    company: "Started Career",
+    title: "Programmer",
+    company: "Tata Consultancy Services",
     description:
-      "Began my journey in software development, learning the fundamentals of web technologies.",
+      "Began my journey in software development, learning the fundamentals of web technologies and Augmented Reality.",
   },
 ];
 
@@ -87,7 +93,7 @@ const About: FC = () => {
                         <span className="text-gray-500">location:</span> Coimbatore, TN
                       </div>
                       <div className="font-mono text-xs text-neon-blue mt-1">
-                        <span className="text-gray-500">status:</span> Available for work
+                        <span className="text-gray-500">status:</span> Available for part-time work
                       </div>
                     </div>
                   </div>
@@ -122,9 +128,9 @@ const About: FC = () => {
                   </p>
                   <p>
                     Currently riding the tech waves at{" "}
-                    <span className="text-neon-purple">Graas.ai</span>, I wield my daily tools like
-                    a coding maestro – <span className="font-mono text-neon-green">JavaScript</span>
-                    , <span className="font-mono text-neon-green">Node.js</span>,{" "}
+                    <span className="text-neon-purple">EY GDS</span>, I wield my daily tools like a
+                    coding maestro – <span className="font-mono text-neon-green">JavaScript</span>,{" "}
+                    <span className="font-mono text-neon-green">Node.js</span>,{" "}
                     <span className="font-mono text-neon-blue">React</span>,{" "}
                     <span className="font-mono text-neon-blue">MongoDB</span>,{" "}
                     <span className="font-mono text-neon-purple">Java</span>, and{" "}

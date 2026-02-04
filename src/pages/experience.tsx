@@ -19,11 +19,40 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
+    id: 0,
+    company: "Ernst and Young Global Delivery Services (EY GDS)",
+    role: "Senior Software Engineer – API / Fullstack",
+    duration: "Currently Employed",
+    period: "Sep 2025 - Present",
+    location: "India",
+    description:
+      "Designing and building high-throughput, data-intensive APIs for enterprise-scale platforms, focusing on performance, reliability, and cloud-native architectures within EY GDS.",
+    achievements: [
+      "Designed and developed multiple high-throughput REST APIs using FastAPI and Node.js to process and serve large-scale datasets efficiently",
+      "Built a configurable task scheduler to orchestrate time-based and event-driven jobs for long-running and data-intensive workflows",
+      "Implemented asynchronous and background processing patterns to handle heavy workloads without blocking API request lifecycles",
+    ],
+    techStack: [
+      "FastAPI",
+      "Python",
+      "Kubernetes",
+      "Azure storage",
+      "OpenTelemetry",
+      "SSQL",
+      "Docker",
+      "Nginx",
+      "Azure Container Apps",
+      "Git",
+    ],
+    color: "#ffe600",
+    icon: "EYGDS",
+  },
+  {
     id: 1,
     company: "Justdial",
     role: "Software Engineer - Fullstack",
-    duration: "1 year",
-    period: "Feb 2024 - Present",
+    duration: "1.8 year",
+    period: "Feb 2024 - Sep 2025",
     location: "India",
     description:
       "Currently driving innovation at one of India's largest local search engines, working on scalable systems and modern web architectures.",
@@ -48,7 +77,7 @@ const experiences: Experience[] = [
       "RabbitMQ",
       "Nginx",
     ],
-    color: "#00ff88",
+    color: "#F26600",
     icon: "JD",
   },
   {
@@ -108,7 +137,7 @@ const experiences: Experience[] = [
       "Kafka",
       "MQTT",
     ],
-    color: "#a855f7",
+    color: "#5F68C3",
     icon: "TCS",
   },
 ];
@@ -358,9 +387,9 @@ const Experience: FC = () => {
               transition={{ delay: 0.5 }}
             >
               {[
-                { label: "Years of Experience", value: "5+" },
-                { label: "Companies", value: "3" },
-                { label: "Technologies", value: "20+" },
+                { label: "Years of Experience", value: "4+" },
+                { label: "Companies", value: "4" },
+                { label: "Technologies", value: "15+" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center px-6 py-4 border border-gray-800">
                   <div className="text-3xl font-bold text-gradient">{stat.value}</div>
@@ -426,7 +455,7 @@ const Experience: FC = () => {
 
                 <h3 className="text-2xl font-bold text-white mb-2">Writing the Next Chapter</h3>
                 <p className="text-gray-400 max-w-lg">
-                  The journey continues at <span className="text-neon-green">Justdial</span>, where
+                  The journey continues at <span className="text-neon-green">EY GDS</span>, where
                   I&apos;m pushing boundaries and building systems that scale.
                 </p>
 

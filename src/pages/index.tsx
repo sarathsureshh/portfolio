@@ -205,7 +205,7 @@ export default function Home() {
 
               <div className="grid grid-cols-3 sm:grid-cols-1 gap-8">
                 <motion.div className="text-center" whileHover={{ scale: 1.05 }}>
-                  <div className="text-4xl font-bold text-gradient mb-2">5+</div>
+                  <div className="text-4xl font-bold text-gradient mb-2">4+</div>
                   <div className="text-gray-400 text-sm font-mono">Years Experience</div>
                 </motion.div>
                 <motion.div className="text-center" whileHover={{ scale: 1.05 }}>
